@@ -1,0 +1,24 @@
+# .gitignore
+node_modules/
+*.log
+temp/
+
+# 本地运行时数据（clone 后自行生成，不入库）
+plugins/*/data/*.json
+plugins/*/data/*.xlsx
+plugins/*/data/*.csv
+plugins/*/data/*.png
+plugins/*/data/*.jpg
+
+# 凭据 / 个人配置 —— 绝不可入库
+plugins/*/data/deepseek.json
+plugins/*/data/admins.json
+
+# 备份
+*.bak-*
+*.before-*
+
+# 系统
+.DS_Store
+Thumbs.db
+desktop.ini
